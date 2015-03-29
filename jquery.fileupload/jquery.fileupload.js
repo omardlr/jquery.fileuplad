@@ -1,4 +1,4 @@
-$.fn.imageupload = function (url, opt) {
+$.fn.fileupload = function (url, opt) {
     //Main Authors: Omar De la Rosa And Jose Maldonado!!!
     //Date: 17/3/2015
 
