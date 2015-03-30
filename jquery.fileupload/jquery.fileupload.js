@@ -79,6 +79,11 @@ $.fn.fileupload = function (url, opt) {
 
             } else if (xhrhttp.status != 200 && xhrhttp.readyState != 1) {
                 opt.error(files[current].name, xhrhttp.responseText, now);
+                
+                if(opt.cancellable){
+                    clearInterval(myUpload); //No more uploads
+                    opt.complete(xhrhttp.responseText);
+                }
             }
         } //onreadystatechange
 
