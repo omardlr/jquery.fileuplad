@@ -104,4 +104,5 @@ $.fn.fileupload = function (url, opt) {
     //Call Function
     myUpload = setInterval(upload, parseInt(opt.interval));
 
+return this;
 }
