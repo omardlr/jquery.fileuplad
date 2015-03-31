@@ -1,7 +1,7 @@
 $.fn.fileupload = function (url, opt) {
     //Main Authors: Omar De la Rosa And Jose Maldonado!!!
     //Date: 17/3/2015
-
+    
     /*
     Ours variables...
     */     
@@ -19,7 +19,8 @@ $.fn.fileupload = function (url, opt) {
 
     //Make the API
     Api.remove = function (index) {
-        delete imgToUpload[index];
+        if(index)
+            delete imgToUpload[index];
     }
 
     if (url == undefined) { //if we do not pass the url then this return the API..
@@ -91,7 +92,6 @@ $.fn.fileupload = function (url, opt) {
         xhrhttp.open("POST", url, false);
         xhrhttp.setRequestHeader("Cache-Control", "no-cache");
         xhrhttp.send(fData);
-        //Update the progress bar....
         //Clean Vars
         fData = null;
         xhrhttp = null;
