@@ -14,12 +14,12 @@ $("#form").fileupload({
     //Called every time that a file is upload to server and no return error
     success : function(filename,responseText,percent){
         alert("The" + filename + " was upload correctly");
-        updateMyCustomProgressVar("#uploadPG",percent);
+        updateMyCustomProgressBar("#uploadPG",percent);
     },
     //Called every time that a file not upload 
     error : function(filename,responseText,percent){
         alert("The" + filename + " was not upload correctly");
-        updateMyCustomProgressVar("#errorPG",percent);
+        updateMyCustomProgressBar("#errorPG",percent);
     },
     //all files are sent to the server.
     complte : function(responseText){
