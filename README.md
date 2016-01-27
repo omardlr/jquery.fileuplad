@@ -3,7 +3,7 @@ Plugin for upload files via AJAX compatible with ASPX and PHP and other...(Testi
 
 #Usage:
 ```javascript
-$("#form").fileupload({
+$("#form").fileupload("niceurl/myupload.[php/ashx]",{
     //testing.... if any file fail then the upload is cancelled.
     cancelable: true,
     //Comming Soon
