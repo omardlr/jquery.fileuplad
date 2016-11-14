@@ -22,7 +22,7 @@ $("#form").fileupload("niceurl/myupload.[php/ashx]",{
         updateMyCustomProgressBar("#errorPG",percent);
     },
     //all files are sent to the server.
-    complte : function(responseText){
+    complete : function(responseText){
     alert("All Done");
     alert(responseText);
     }
