@@ -23,8 +23,8 @@ $("#form").fileupload("niceurl/myupload.[php/ashx]",{
     },
     //all files are sent to the server.
     complete : function(responseText){
-    alert("All Done");
-    alert(responseText);
+        alert("All Done");
+        alert(responseText);
     }
     
 })
